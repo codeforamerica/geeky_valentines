@@ -116,8 +116,8 @@ app.get('/postcard1', function(req, res) {
         var date = new Date(data.date);
         data.datestring = months[date.getMonth()]+ " " + date.getDate()+", "+date.getFullYear();
 */
-    var card = card_data.cards["open_data"];
-    card.name = "open_data";
+    var card = card_data.cards["html_valentine"];
+    card.name = "html_valentine";
     var data = {"to":{"name":"To Name",
                       "address":"to@address"},
                 "from":{"name":"from name",

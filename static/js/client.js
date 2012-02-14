@@ -40,7 +40,7 @@ $(document).ready(function(){
         }, "json");
     });
     var card_valign = function(){
-        var top_margin = $(window).height() / 2 -250;
+        var top_margin = $(window).height() / 2 -($(".card").height()/2);
         $(".card").css("margin-top", top_margin);
         
     };

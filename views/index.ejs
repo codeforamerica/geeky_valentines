@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Have a Geeky Valentines</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/client.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+  </head>
+  <body class="mainpage">
+    <div id="header">
+      <div id="codeforamerica"></div>
+      <div id="banner"></div>
+      <div class="spacer"></div>
+    </div>
+    <div id="content">
+      <div class="step">step one: choose a card</div>
+      <div id="cards">
+        <ul>
+          <% for(c in card_data.cards) { card = card_data.cards[c]%>
+          <li><img src="/static/images/<%= c %>.<%= card.ext %>" /></li>
+          <% } %>
+         
+        </ul>
+
+      </div>
+
+      <div class="spacer"></div>
+      <div id="form" style='display:none'>
+        <label>Your Name</label>
+        <input type="text" id="fromname" /><br />
+        <label>Your Email Address</label>
+        <input type="text" id="fromaddress" /><br />
+        <label>RECIPIENT NAME</label>
+        <input type="text" id="toname" /><br />
+        <label>RECIPIENT EMAIL Address</label>
+        <input type="text" id="toaddress" /><br />
+        <label class="right">100 word limit</label>
+        <label class="left">message</label><br />
+        <div class="spacer"></div>
+        <textarea id="message"></textarea>
+        <div class="spacer"></div>
+        <input type="button" value="Send" id="submit" />
+      </div>
+    </div>
+  </body>
+</html>

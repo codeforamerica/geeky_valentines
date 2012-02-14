@@ -1,0 +1,222 @@
+body {
+	background: #fff;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+body.withcard{ 
+  background: url('/static/images/fabric_bg.jpg');
+}
+body.mainpage{ 
+  background:#dbdbdb;
+}
+div#header{ 
+  background: url('/static/images/background_pattern.png');
+}
+
+h1 {
+	font-size: 50px; text-transform: uppercase; color: #717171;
+	text-shadow: 0 3px 3px #333; margin: 50px 0 0 0; text-align: center;
+}
+div#content{ 
+
+
+}
+.container {
+  min-width:1300px;
+  width: 100%; height: 100%;
+
+  webkit-perspective: 1000;
+}
+
+.card {
+  width: 600px; height: 500px;
+  margin:auto;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1s;
+}
+.container.flip .card {
+  -webkit-transform: rotateY(180deg);				
+}
+
+.face {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+
+.aloha {
+	float:left; position: absolute; top:0px left:0px;
+}
+.aloha .front {
+  width:600px; height:500px; 
+  border:solid 1px #999;
+}
+.aloha .front img {
+  width:100%;
+  height:100%;
+}
+.aloha .back {
+  width: 600px; height: 500px; 
+  background:#fff;
+  border:solid 1px #999;
+  -webkit-transform: rotateY(180deg);
+}
+.aloha .back #postcardcontent{ 
+  width:500px;
+  padding:30px;
+  color:#777;
+  line-height:1.5em;
+  font-size:1.3em;
+}
+.aloha .back #postcardcontent #date{
+  float:right;
+  margin-bottom:10px;
+  clear:both;
+} 
+.aloha .back #postcardcontent #greeting{
+  margin-bottom:20px;
+}
+.aloha .back #postcardcontent #message{
+ 
+}
+div.howto{ 
+  font-size:22px;
+  color:#fff;
+  background: rgba(30, 30, 30, 0.4);
+  position:absolute;
+  top:20px;
+  right:20px;
+  padding:20px;
+  border-radius:10px;
+}
+div.status{ 
+  font-size:36px;
+  text-align:center;
+  color:#939598;
+  margin-top:20px;
+}
+div#fromnamedisplay{ 
+  position:absolute;
+  bottom:50px;
+  right:50px;
+  margin-bottom:20px;
+  font-weight:bold;
+  font-size:1.2em;
+  color:#ee346e;
+
+}
+
+div#fromnamedisplay span{ 
+  color:#aaa;
+  font-style:italic;
+  font-size:0.6em;
+  font-weight:normal;
+}
+
+
+
+.spacer{ 
+  clear:both;
+}
+
+.front {
+	z-index: 10;
+}
+.container.flip .front {
+	z-index: 0;
+} 
+div#background{ 
+  position: absolute;
+  top:0px; left: 0px;
+  z-index:-10;
+}
+div#background img{ 
+  width:100%; height:100%;
+  z-index:-10;
+}
+
+div#codeforamerica{ 
+  width:120px;
+  height:48px;
+  float:right;
+  margin: 40px 35px 30px 0px;
+  background:url("/static/images/cfa_logo.png");
+  z-index:100;
+}
+div#banner{ 
+  width:585px;
+  height:94px;
+  float:left;
+  margin: 40px 0px 30px 35px;
+  background:url("/static/images/banner.png");
+  z-index:100;
+}
+div.step{ 
+  color:#939598;
+  text-align:center;
+  font-size:1.3em;
+  font-weight:bold;
+  padding:15px 0px 15px 0px;
+}
+div#cards{ 
+  width:900px;
+  margin:auto;
+}
+div#cards ul{
+  margin:0px;
+  padding:0px;
+}
+div#cards ul li{
+  float:left;
+  margin:15px;
+  background:#eee;
+  width:270px;
+  height:140px;
+}
+div#cards ul li img{
+  width:100%;
+  height:100%;
+}
+
+
+div#form{ 
+  margin:auto;
+  text-align:right;
+  width:600px;
+}
+div#form input{
+  font-size:22px;
+  padding:8px;
+  border:none;
+  width:350px;
+  margin-bottom:14px;
+  color:#333;
+  background: rgba(255, 255, 255, 0.8);
+} 
+div#form input[type="button"]{
+  width:80px;
+  border:solid 1px #aaa;
+  margin-top:20px;
+  color:#333;
+  cursor:pointer;
+}
+div#form label{
+  color:#333;
+  text-transform:uppercase;
+  font-size:0.8em;
+  margin-right:5px;
+}
+div#form label.left{
+  float:left;
+  margin-left:150px;
+}
+div#form label.right{
+  float:right;
+}
+
+div#form textarea{ 
+  width:450px;
+  height:250px;
+  border:none;
+  font-size:22px;
+  padding:10px;
+  background: rgba(255, 255, 255, 0.8);
+}

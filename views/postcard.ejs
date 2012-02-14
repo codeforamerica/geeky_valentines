@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>A Geeky Valentines Day</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/client.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+  </head>
+  <body class="withcard">
+    <div id="content">
+
+      <div class="container aloha">
+	    <div class="card" style="width:<%= data.card.width %> px; height: <%= data.card.height %>px;">
+		  <div class="face front" style="width:<%= data.card.width %> px; height: <%= data.card.height %>px;">
+            <img src="/static/images/<%= data.card.name %>.<%= data.card.ext %>" /> 
+            <div class="howto">Click to spin the card around</div>
+		  </div>
+		  <div class="face back"style="width:<%= data.card.width %> px; height: <%= data.card.height %>px;">
+            <div class="howto">Click to spin the card around</div>
+
+            <div class="spacer"></div>
+            <div id="postcardcontent">
+              <div class="spacer"></div>
+              <div id="greeting">Dear <%= data.to.name %>,</div>
+              <div id="message">
+                <%= data.message %>
+              </div>
+              <div id="fromnamedisplay"><span>FROM:</span> <%= data.from.name %></div>
+            </div>
+
+
+
+
+		  </div>
+	 	</div>
+	  </div>
+
+      
+    </div>
+  </body>
+</html>

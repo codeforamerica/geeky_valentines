@@ -3,6 +3,10 @@
           "geeky_valentine1":{"width":"700", "height":"500", "ext":"jpg"},
           "heroku":{"width":"600", "height":"500", "ext":"png"},
           "geeky_valentine2":{"width":"600", "height":"500", "ext":"png"},
-          "git_sad":{"width":"640", "height":"480", "ext":"png"}  
+          "git_sad":{"width":"640", "height":"480", "ext":"png"},
+          "html_valentine":{"width":"800", "height":"681", "ext":"jpg"},  
+          "civic_engagement":{"width":"600", "height":"450", "ext":"png"},
+          "ui_valentine":{"width":"800", "height":"600", "ext":"jpg"},
+          "rfp_valentine":{"width":"800", "height":"681", "ext":"jpg"}
          }
 }

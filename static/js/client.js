@@ -10,7 +10,7 @@ $(document).ready(function(){
         $("div.howto").fadeIn("normal");
     };
     hideHowTo();
-    $("div.card").click(function(){
+    $("div.aloha").click(function(){
         if($(this).is(".flip")){
             $("div.aloha").removeClass("flip");
             hideHowTo();

@@ -170,6 +170,7 @@ div#cards ul li{
   background:#eee;
   width:270px;
   height:140px;
+  cursor:pointer;
 }
 div#cards ul li img{
   width:100%;

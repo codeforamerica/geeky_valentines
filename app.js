@@ -56,7 +56,7 @@ app.post('/send', function(req, res){
 
         //Send email.
         // include the from/to  and link to the message
-        var url = "http://hnlpostcard.herokuapp.com/postcard/"+urlhash
+        var url = "http://cfavalentines.herokuapp.com/card/"+urlhash
         var email_template = fs.readFileSync("views/email.ejs", "utf-8");
 
         email_template = email_template.replace("{{ toname }}", req.body.toname);
@@ -73,7 +73,7 @@ app.post('/send', function(req, res){
             domain: 'heroku.com',
             to: req.body.toaddress,
             from: req.body.fromaddress,
-            subject: 'Aloha from Honolulu!',
+            subject: 'Happy Geeky Valentines',
             html: email_str
         }, function (err, result) {
             console.log("sent email", err);
@@ -86,7 +86,7 @@ app.post('/send', function(req, res){
 
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-app.get('/postcard/:id', function(req, res) {
+app.get('/card/:id', function(req, res) {
     redis.get("postcard:"+req.params.id, function(err, value) {
         if(value == null){
             res.redirect("/");

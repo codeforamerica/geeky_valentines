@@ -94,6 +94,7 @@ app.get('/card/:id', function(req, res) {
         }
         var data = JSON.parse(value);
         var date = new Date(data.date);
+        console.log(data);
         var card = card_data.cards[data.card];
         card.name = data.card;
         data.card = card;

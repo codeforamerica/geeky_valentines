@@ -1,6 +1,8 @@
 {"cards":{
           "open_data":{"width":"700", "height":"500", "ext":"jpg"},
-          "heroku":{"width":"700", "height":"500", "ext":"jpg"},
+          "geeky_valentine1":{"width":"700", "height":"500", "ext":"jpg"},
+          "heroku":{"width":"600", "height":"500", "ext":"png"},
+          "geeky_valentine2":{"width":"600", "height":"500", "ext":"png"},
           "git_sad":{"width":"640", "height":"480", "ext":"png"}  
          }
 }
